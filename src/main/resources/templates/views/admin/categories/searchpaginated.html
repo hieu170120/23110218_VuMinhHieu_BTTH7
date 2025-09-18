@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-      layout:decorate="~{admin/layout.html}">
+      layout:decorate="~{layout.html}">
 <body>
     <section class="row" layout:fragment="content">
         <div class="col mt-4">
@@ -117,8 +117,7 @@
                             <li class="${categoryPage.totalPages == categoryPage.number + 1 ? 'page-item active' : 'page-item'}">
                                 <a th:href="@{/admin/categories/searchpaginated(name=${name},size=${categoryPage.size},page=${categoryPage.totalPages})}" class="page-link">Last</a>
                             </li>
-                        </ul>
-                    </nav>
+                        </</nav>
                 </div>
             </div>
         </div>
